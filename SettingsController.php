@@ -22,8 +22,6 @@ class SettingsController extends Controller
           'value' => 'required',
         ));
 
-        $settings::find($id);
-
         $settings->name = $request->input('name');
         $settings->value = $request->input('value');
 
